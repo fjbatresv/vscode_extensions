@@ -6,7 +6,7 @@ git config user.email \"$2\"
 git pull
 git status
 # Create file with extensions
-code --list-extensions | xargs -L 1 echo code --install-extension
+code --list-extensions | xargs -L 1 echo code --install-extension > vscode_extensions.sh
 # Update changes
 git add vscode_extensions.sh
 git commit -m "Updated using the bash file"
